@@ -98,4 +98,10 @@ var n=0;
 setInterval(function(){
 	resume.innerHTML=code.substring(0,n);
 	n=n+1;
+	var str=resume.innerHTML
+	// resume.scrollTop=resume.scrollHeight;
+	// console.log(str.indexOf('</footer>'));
+	if(str.indexOf('</footer>')===-1){
+		resume.scrollTop=resume.scrollHeight;
+	}
 },30);
